@@ -3,6 +3,7 @@
   "description" : "Silex SoundCloud Provider",
   "license" : "GPLv3",
   "type": "library",
+  "minimum-stability": "dev",
   "autoload" : {
     "psr-4" : {
       "MrPrompt\\Silex\\": "src/"
