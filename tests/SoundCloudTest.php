@@ -45,11 +45,10 @@ class SoundCloudTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
+     * @dataProvider validSounds
      */
-    public function createMustBeReturnArray()
+    public function createMustBeReturnArray($url)
     {
-        $url    = 'https://soundcloud.com/r3hab/calvin-harris-john-newman-blame-r3hab-trap-remix';
-
         $result = $this->app[SoundCloud::NAME]($url);
 
         $this->assertArrayHasKey('id', $result);
@@ -57,5 +56,23 @@ class SoundCloudTest extends PHPUnit_Framework_TestCase
         $this->assertArrayHasKey('description', $result);
         $this->assertArrayHasKey('uri', $result);
         $this->assertArrayHasKey('artwork_url', $result);
+    }
+
+    /**
+     * @return array
+     */
+    public function validSounds()
+    {
+        return [
+            [
+                'https://soundcloud.com/r3hab/calvin-harris-john-newman-blame-r3hab-trap-remix'
+            ],
+            [
+                'https://soundcloud.com/bottom2thatop-records/kenny-b-i-gotta-have-you'
+            ],
+            [
+                'https://soundcloud.com/r3hab/freak-joe-stone-remix'
+            ],
+        ];
     }
 }

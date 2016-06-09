@@ -82,6 +82,12 @@ final class SoundCloud implements SoundCloudInterface, ServiceProviderInterface
         /* @var $response \Njasm\Soundcloud\Request\Response */
         $response = $service->get($parsed['path'])->request();
 
-        return $response->bodyArray();
+        return $response->bodyArray() ?: [
+            'id' => null,
+            'title' => null,
+            'description' => null,
+            'uri' => null,
+            'artwork_url' => null,
+        ];
     }
 }
