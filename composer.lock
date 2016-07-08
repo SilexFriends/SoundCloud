@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "a3ab6dde74ad34ff989e7ccbe8e8c74d",
-    "content-hash": "4aca5c6137cbde8ec560c06df4b64720",
+    "hash": "dbdb4c9ef6ec9630f6d21bc96d21f4af",
+    "content-hash": "a9c32239cdbdf171b0e4207c0b2229fc",
     "packages": [
         {
             "name": "njasm/soundcloud",

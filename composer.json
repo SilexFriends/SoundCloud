@@ -1,5 +1,5 @@
 {
-  "name" : "SilexFriends/SoundCloud",
+  "name" : "silexfriends/soundcloud",
   "description" : "Silex SoundCloud Provider",
   "license" : "MIT",
   "type": "library",
