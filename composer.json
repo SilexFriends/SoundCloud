@@ -1,17 +1,17 @@
 {
-  "name" : "mrprompt/silex-soundcloud",
+  "name" : "SilexFriends/SoundCloud",
   "description" : "Silex SoundCloud Provider",
   "license" : "MIT",
   "type": "library",
   "minimum-stability": "dev",
   "autoload" : {
     "psr-4" : {
-      "MrPrompt\\Silex\\": "src/"
+      "SilexFriends\\SoundCloud\\": "src/"
     }
   },
   "autoload-dev" : {
     "psr-4" : {
-      "MrPrompt\\Silex\\Tests\\": "tests/"
+      "SilexFriends\\SoundCloud\\Tests\\": "tests/"
     }
   },
   "authors" : [
