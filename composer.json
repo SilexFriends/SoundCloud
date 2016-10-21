@@ -1,5 +1,5 @@
 {
-  "name" : "silexfriends/soundcloud",
+  "name" : "mrprompt/silex-soundcloud",
   "description" : "Silex SoundCloud Provider",
   "license" : "MIT",
   "type": "library",
@@ -30,6 +30,7 @@
   },
   "require-dev": {
     "phpunit/phpunit": "^5.1",
-    "silex/silex": "~1.3"
+    "silex/silex": "~1.3",
+    "codeclimate/php-test-reporter": "dev-master"
   }
 }

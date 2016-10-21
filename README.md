@@ -1,8 +1,16 @@
 # SoundCloud Silex Provider
 
-[![Build Status](https://travis-ci.org/mrprompt/silex-soundcloud.svg?branch=master)](https://travis-ci.org/mrprompt/silex-soundcloud)
+[![Build Status](https://travis-ci.org/SilexFriends/SoundCloud.svg?branch=master)](https://travis-ci.org/SilexFriends/SoundCloud)
+[![Code Climate](https://codeclimate.com/github/SilexFriends/SoundCloud/badges/gpa.svg)](https://codeclimate.com/github/SilexFriends/SoundCloud)
+[![Test Coverage](https://codeclimate.com/github/SilexFriends/SoundCloud/badges/coverage.svg)](https://codeclimate.com/github/SilexFriends/SoundCloud/coverage)
+[![Issue Count](https://codeclimate.com/github/SilexFriends/SoundCloud/badges/issue_count.svg)](https://codeclimate.com/github/SilexFriends/SoundCloud)
 
+## Install
+```
+composer require mrprompt/silex-soundcloud
+```
 
+## Usage
 ```
 use SilexFriends\SoundCloud\SoundCloud;
 use Silex\Application;
@@ -22,4 +30,12 @@ $sound = $app['soundcloud']($url);
 var_dump($sound);
 ```
 
-Done :)
+## Tests
+
+```
+./vendor/bin/phpunit
+```
+
+## License
+
+MIT
